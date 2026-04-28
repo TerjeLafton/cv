@@ -1,0 +1,8 @@
+[tools]
+typst = "latest"
+tinymist = "latest"
+typstyle = "latest"
+
+[tasks.compile]
+description = "Compile CV to PDF"
+run = "typst compile cv.typ out/cv.pdf"

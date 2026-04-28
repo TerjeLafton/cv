@@ -1,8 +1,29 @@
-= Terje Lafton
+#import "@preview/fontawesome:0.6.0": *
+#set text(font: "Helvetica Neue")
 
-#link("mailto:terje@lafton.io") \
-+47 419 00 298 \
-#link("https://github.com/terjelafton")[GitHub] \
+#grid(
+  columns: (1fr, auto),
+  stack(
+    spacing: 1.5em,
+    text(size: 40pt, weight: "bold")[Terje Lafton],
+    text(size: 12pt, fill: rgb("#666"))[Senior Platform Engineer],
+    [
+      #fa-github() #link("https://github.com/terjelafton")[GitHub]
+      #h(1em)|#h(1em)
+      #fa-envelope() #link("mailto:terje@lafton.io")
+      #h(1em)|#h(1em)
+      #fa-phone() +47 419 00 298
+    ],
+  ),
+  box(
+    width: 3cm,
+    height: 3cm,
+    radius: 50%,
+    clip: true,
+  )[
+    #image("assets/photo.jpeg", width: 100%, height: 100%, fit: "cover")
+  ],
+)
 
 = Experience
 == Intility

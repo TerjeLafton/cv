@@ -6,4 +6,4 @@ lefthook = "latest"
 
 [tasks.compile]
 description = "Compile CV to PDF"
-run = "typst compile cv.typ out/cv.pdf"
+run = "typst compile cv.typ docs/cv.pdf"

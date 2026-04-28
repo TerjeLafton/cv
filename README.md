@@ -15,5 +15,5 @@ lefthook install
 mise compile
 ```
 
-Outputs `out/cv.pdf`. The PDF is automatically rebuilt and staged on
+Outputs `docs/cv.pdf`. The PDF is automatically rebuilt and staged on
 every commit that touches `cv.typ`, via lefthook.

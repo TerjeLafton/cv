@@ -1,6 +1,14 @@
 #import "@preview/fontawesome:0.6.0": *
 #set text(font: "Helvetica Neue")
 
+#let entry(title, date) = block(above: 0.8em, below: 0.8em)[
+  #grid(
+    columns: (1fr, auto),
+    align: (left + horizon, right + horizon),
+    text(weight: "bold", size: 11pt)[#title], text(fill: rgb("#666"))[#date],
+  )
+]
+
 #grid(
   columns: (1fr, auto),
   stack(
@@ -27,8 +35,7 @@
 
 = Experience
 == Intility
-=== Senior Platform Engineer
-Aug 2022 - Present \
+#entry[Senior Platform Engineer][Aug 2022 - Present]
 Returned to the Intility network team, working mostly on Azure. First
 project was a PoC for Azure Virtual WAN to replace per-customer
 on-prem VPN tunnels, built first in Terraform then rebuilt with Crossplane.
@@ -47,14 +54,15 @@ management cluster with Argo and Kargo, plus redundant pairs for
 lab, staging, preprod, and prod.
 
 Named in the
-#link("https://blog.crossplane.io/crossplane-v1-16/")[Crossplane v1.16 release blog post]
+#link(
+  "https://blog.crossplane.io/crossplane-v1-16/",
+)[Crossplane v1.16 release blog post]
 for a community proposal to change how resource statuses are handled
 in the Provider framework
 (#link("https://github.com/crossplane/crossplane/pull/5453")[PR #5453]).
 
 == Oda
-=== Software Developer
-Jan 2022 - Jun 2022 \
+#entry[Software Developer][Jan 2022 - Jun 2022]
 Worked on the network and sites team during Oda's European expansion.
 The team handled both existing facilities and new locations. Replaced
 the Meraki setup with Cisco SDWAN, learning the platform and testing
@@ -63,8 +71,7 @@ operational systems, since documentation was minimal and
 scattered. The longer-term plan was to automate more of how new facilities get deployed.
 
 == Intility
-=== Senior Engineer
-Sep 2020 - Dec 2021 \
+#entry[Senior Engineer][Sep 2020 - Dec 2021]
 With more seniority, work shifted from operational cases to project
 work and training newer engineers joining the network team.
 Responsible for the software side of Intility's Cisco ACI setup,
@@ -74,8 +81,7 @@ and contracts) and fabric provisioning (new leaves and their port
 configurations). Python became a daily tool, with some Ansible work
 too.
 
-=== Engineer
-Mar 2016 - Aug 2020 \
+#entry[Engineer][Mar 2016 - Aug 2020]
 Started in Intility's IT support function, as second-line support since there was
 no first-line support in Intility.
 Took the CCNA and moved into the Network Services NOC, working on Cisco core and
@@ -84,8 +90,7 @@ customers, including site-to-site VPNs between Intility's private
 cloud and customer Azure environments.
 
 == Norges Idrettsforbund
-=== Apprentice/IT Support Technician
-Aug 2013 - Feb 2016 \
+#entry[Apprentice/IT Support Technician][Aug 2013 - Feb 2016]
 Two-year apprenticeship: first-line phone support for in-house services
 used by 1M+ members, then on-site desk supporting sports federations and
 regional offices. Stayed on after the apprenticeship to lead the desk and
@@ -100,12 +105,10 @@ train new apprentices.
 *Languages:* Fluent Norwegian, Fluent English
 
 = Certifications
-== Cisco Certified Network Associate (CCNA)
-Aug 2017 - Jun 2020
+#entry[Cisco Certified Network Associate (CCNA)][Aug 2017 - Jun 2020]
 
 = Talks
-== From Terraform to Crossplane
-Intility Developer Day, 2024 \
+#entry[From Terraform to Crossplane][Intility Developer Day, 2024]
 Reliability issues we ran into automating Terraform through CI/CD
 pipelines, with the broader point that automating a CLI tool isn't
 always a good idea. Then on to Crossplane: what we built with it,
@@ -114,4 +117,4 @@ pattern you get for free.
 
 = Education
 == Hønefoss Videregående
-=== IKT Servicefag Aug 2010 - Jun 2013
+#entry[IKT Servicefag][Aug 2010 - Jun 2013]

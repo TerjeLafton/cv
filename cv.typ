@@ -38,16 +38,16 @@
 #entry[Senior Platform Engineer][Aug 2022 - Present]
 Returned to the Intility network team, working mostly on Azure. First
 project was a PoC for Azure Virtual WAN to replace per-customer
-on-prem VPN tunnels, built first in Terraform then rebuilt with Crossplane.
+on-prem VPN tunnels, built first in Terraform, then rebuilt with Crossplane.
 
 Built a custom Crossplane Provider using gNMI and YANG to drive
 per-customer configuration across the core network from Kubernetes
 resources, with a frontend on top.
 
 Built a 2.0 version: a custom Kubernetes Operator in Go (replacing
-Crossplane), a NetBox plugin as low-level frontend, a gRPC caching
+Crossplane), a NetBox plugin as a low-level frontend, a gRPC caching
 proxy that dropped router hits from thousands per second to near
-zero, and OpenTelemetry with Logfire.
+zero, and OpenTelemetry instrumentation with Logfire.
 
 Deployed across nine clusters on Intility's Kubernetes platform: a
 management cluster with Argo and Kargo, plus redundant pairs for
@@ -68,7 +68,7 @@ The team handled both existing facilities and new locations. Replaced
 the Meraki setup with Cisco SDWAN, learning the platform and testing
 on routers in the facilities. Wrote Python to populate NetBox from
 operational systems, since documentation was minimal and
-scattered. The longer-term plan was to automate more of how new facilities get deployed.
+scattered. The longer-term plan was to automate more of how new facilities are deployed.
 
 == Intility
 #entry[Senior Engineer][Sep 2020 - Dec 2021]
@@ -82,8 +82,8 @@ configurations). Python became a daily tool, with some Ansible work
 too.
 
 #entry[Engineer][Mar 2016 - Aug 2020]
-Started in Intility's IT support function, as second-line support since there was
-no first-line support in Intility.
+Started in Intility's IT support function, as second-line support since Intility
+had no first-line.
 Took the CCNA and moved into the Network Services NOC, working on Cisco core and
 customer networks across multiple data centres serving thousands of
 customers, including site-to-site VPNs between Intility's private

@@ -1,6 +1,5 @@
-= Info
+= Terje Lafton
 
-Terje Lafton \
 #link("mailto:terje@lafton.io") \
 +47 419 00 298 \
 #link("https://github.com/terjelafton")[GitHub] \
@@ -31,11 +30,13 @@ from thousands per second to near zero.
 
 Deployed across nine clusters on Intility's new Kubernetes platform,
 with a management cluster running Argo and Kargo and
-lab/staging/preprod/prod separation. Lab uses Cisco CML for device
+lab/staging/preprod/prod separation. Lab and staging uses Cisco CML for device
 simulation; preprod runs read-only against prod routers.
 
 Named in the
-#link("https://blog.crossplane.io/crossplane-v1-16/")[Crossplane v1.16 release blog post]
+#link(
+  "https://blog.crossplane.io/crossplane-v1-16/",
+)[Crossplane v1.16 release blog post]
 for community contributions, mainly
 #link("https://github.com/crossplane/crossplane/pull/5453")[PR #5453],
 a proposal to change how resource statuses are handled in the
@@ -80,21 +81,25 @@ regional offices. Stayed on after the apprenticeship to lead the desk and
 train new apprentices.
 
 = Skills
-== Kubernetes - Custom Operators, Crossplane, Argo, Kargo, Openshift
-== Programming - Go, gRPC, Python, Scripting
-== Networking - gNMI, YANG, NetBox, Cisco (XR, CML, Meraki), Palo Alto, SDWAN
-== Cloud - Azure, Terraform
-== Observability - OpenTelemetry, Logfire
+*Kubernetes:* Custom Operators, Crossplane, Argo, Kargo, Openshift \
+*Programming:* Go, gRPC, Python, Scripting \
+*Networking:* gNMI, YANG, NetBox, Cisco (XR, CML, Meraki), Palo Alto, SDWAN \
+*Cloud:* Azure, Terraform \
+*Observability:* OpenTelemetry, Logfire
 
 = Certifications
-== CCNA
+== Cisco Certified Network Associate (CCNA)
 Aug 2017 - Jun 2020
 
 = Talks
-== Intility Developer Day
-Crossplane vs Terraform
+== From Terraform to Crossplane
+Intility Developer Day, 2024 \
+Reliability issues we ran into automating Terraform through CI/CD
+pipelines, with the broader point that automating a CLI tool isn't
+always a good idea. Then on to Crossplane: what we built with it,
+the value of a Kubernetes-style control plane, and the reconciler
+pattern you get for free.
 
 = Education
 == Hønefoss Videregående
 === IKT Servicefag Aug 2010 - Jun 2013
-#lorem(20)

@@ -2,6 +2,7 @@
 typst = "latest"
 tinymist = "latest"
 typstyle = "latest"
+lefthook = "latest"
 
 [tasks.compile]
 description = "Compile CV to PDF"

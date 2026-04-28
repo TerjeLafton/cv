@@ -2,12 +2,18 @@
 
 My CV, written in [Typst](https://typst.app).
 
-## Build
+## Setup
 
-Requires [mise](https://mise.jdx.dev/) for tooling.
+```bash
+mise install
+lefthook install
+```
+
+## Build
 
 ```bash
 mise compile
 ```
 
-Outputs `out/cv.pdf`.
+Outputs `out/cv.pdf`. The PDF is automatically rebuilt and staged on
+every commit that touches `cv.typ`, via lefthook.

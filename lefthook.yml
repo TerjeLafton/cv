@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    compile:
+      glob: "*.typ"
+      run: mise compile && git add out/cv.pdf
